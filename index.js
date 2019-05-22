@@ -3,8 +3,24 @@
          theme: "minimal"
     });
     $('#btn1').on('click', function () {
-                        // open or close navbar
-                        $('#portfolio').addClass('selected');
+                        // add the class selected to make it change color
+                        $('#about').addClass('selected');
+                        $('p').addClass('slideUp');
+                        $('h5').addClass('slideUp');
+                        $('button').addClass('slideUp');
+                        $('#home').removeClass('selected');
+                       
+                        var elmnt = document.getElementById("aboutSubmenu");
+                         elmnt.scrollIntoView();
+                    });
+                    $('#btn2').on('click', function () {
+                        // add the class selected to make it change color
+                        $('#home').addClass('selected');
+                        $('#about').removeClass('selected');
+                        $('#portfolio').removeClass('selected');
+                        $('#contact').removeClass('selected');
+                        var elmnt = document.getElementById("homesubmenu");
+                        elmnt.scrollIntoView();
                     });
     
 
@@ -36,4 +52,13 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+  //anime p tag
+  anime.timeline({loop: true})
+  .add({
+      targets: 'a',
+      opacity: 0,
+      duration: 1000,
+      easing: "easeOutExpo",
+      delay: 1000
+    });
            

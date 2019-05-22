@@ -60,9 +60,17 @@ a, a:hover, a:focus {
 }
 .sidebarcollapse{
     margin-left: 80px;
+    transition: all 0.3s;
+    top: 0;
+    left: 0.5;
+    position: fixed;
 }
 .sidebarcollapse1{
     margin-left: 250px;
+    transition: all 0.3s;
+    top: 0;
+    left: 0.5;
+    position: fixed;
 }
 #sidebar ul.components {
     padding: 20px 0;
@@ -105,7 +113,7 @@ ul ul a {
 }
 .selected{
     background-color: aliceblue;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 .hr{
     border-bottom: 1px solid #ffffff;
@@ -145,11 +153,61 @@ header{
   .btn-about{
 margin-left :60%;
   }
+  .btn-back{
+    transition: all 0.3s;
+    bottom: 40px;
+    right: 20px;
+    position: fixed;
+  }
+  .section2a{
+      background-color: black;
+      background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 100vh;
+  }
+  .media{
+      margin-top: 10%;
+      margin-right: 30%;
+  }
+ .section2{
+    margin-left: 270px;
+ }
+ .slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
 @media (max-width: 768px) {
     /* 80px and its content aligned to centre. Pushing it off the screen with the
        negative left margin
     */
-   
+    
     #sidebar.active {
         min-width: 80px;
         max-width: 80px;
@@ -157,6 +215,14 @@ margin-left :60%;
         margin-left: -80px !important;
       
     }
+.ml3{
+    margin-top: 200px;
+    margin-left: 50px;
+    font-size: 20px
+}
+.section2{
+    margin-left: 0px
+}
 
 
     /* Reappearing the sidebar on toggle button click */

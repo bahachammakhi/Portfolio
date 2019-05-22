@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Links -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
@@ -27,7 +27,7 @@
     
             <ul class="list-unstyled components">
                 
-                <li id="home" >
+                <li id="home" class="selected">
                     <a href="#homeSubmenu" >
                 <i class="fas fa-home"></i>
                         Home</a>
@@ -55,7 +55,7 @@
         <!-- Page Content -->
         
                <div class="container-fluid">
-                   <div class="row">
+                   <div class="row" id="homesubmenu">
                    <header id="content"> 
                         <button type="button" id="sidebarCollapse" class="btn btn-dark sidebarcollapse">
                                 <i class="fas fa-align-left"></i>
@@ -63,14 +63,29 @@
                        <h1 class="ml3"> 
                           Welcome to my Portfolio
                          </h1>
-                         <button href="aboutSubmenu" class="btn btn-dark btn-about " >Know me</button>
+                         <button href="aboutSubmenu" class="btn btn-outline-danger btn-about " id="btn1" >Know me</button>
+                         <button id="btn2" class="btn btn-dark btn-back"><i class="fas fa-arrows-alt-v"></i></button>
                    </header>
                    </div>
             <!-- We'll fill this with dummy content -->
-       <div class="row" id="aboutSubmenu">
-                    <h1>Baha chammakhi</h1>
-            </div>   
-    </div>  
+            
+       <div class=" row section2a" id="aboutSubmenu" >
+           <div class="section2">
+                <div class="media">
+                        <img class="align-self-start mr-3" width="200px" height="200px" src="img/me.jpg" alt="Generic placeholder image">
+                        <div class="media-body" style="margin-right: 200px;">
+                          <h5 class="mt-0" style="color: aliceblue">Baha eddine chammakhi</h5>
+                          <p>Hello I am an IT network and telecommunication student and a junior front-end-developer .</p>
+                          <p>I love coding and working on projects I found it quite something I really wanna do and enjoy doing </p>
+                          <div><a href="http://www.istic.rnu.tn/" target="_blank"> you can click here to check my college</a></div>
+                          <button class="btn btn-outline-danger" style="margin-top: 10%">Check my Portfolio</button>
+                        </div>
+                        
+                      </div>
+            </div>  
+            </div> 
+    
+    
     </div>
        <!-- jQuery CDN - Slim version (=without AJAX) -->
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
