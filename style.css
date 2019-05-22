@@ -181,12 +181,36 @@ margin-left :60%;
     -webkit-animation-duration: 1s;
     visibility: visible;
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  /* The progress container (grey background) */
+.progress-container {
+    width: 50%;
+    height: 8px;
+    background: #ccc;
+    position: fixed;
+  top: 20px;
+  right: 20px;;
+  z-index: 1;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    height: 8px;
+    background: #ca4a50;
+    width: 0%;
+  }
   
   @keyframes slideUp {
     0% {
       opacity: 0;
       -webkit-transform: translateY(70%);
     } 
+    50% {
+        opacity: 0.5;
+        -webkit-transform: translateY(50%);
+      } 
     100% {
       opacity: 1;
       -webkit-transform: translateY(0%);
@@ -203,10 +227,12 @@ margin-left :60%;
       -webkit-transform: translateY(0%);
     }
   }
+  
 @media (max-width: 768px) {
     /* 80px and its content aligned to centre. Pushing it off the screen with the
        negative left margin
     */
+    
     
     #sidebar.active {
         min-width: 80px;
