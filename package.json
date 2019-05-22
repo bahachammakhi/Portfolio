@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bahachammakhi/Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio"
+  ],
+  "author": "Baha chammakhi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bahachammakhi/Portfolio/issues"
+  },
+  "homepage": "https://github.com/bahachammakhi/Portfolio#readme"
+}

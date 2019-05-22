@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Links -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    
+    <!-- Scrollbar Custom CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <title>Baha chammakhi</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <!-- Sidebar -->
+        <nav id="sidebar" class="active">
+            <div class="sidebar-header">
+                <h3>Baha Chammakhi</h3>
+                <strong>BC</strong>
+                
+            </div>
+            
+    
+            <ul class="list-unstyled components">
+                
+                <li id="home" >
+                    <a href="#homeSubmenu" >
+                <i class="fas fa-home"></i>
+                        Home</a>
+                   
+                </li>
+                <li id="about">
+                    <a href="#aboutSubmenu">
+                            <i class="fas fa-address-card"></i>
+                        About</a>
+                </li>
+              
+                <li id="portfolio"> 
+                    <a href="#portfolioSubmenu">
+                            <i class="fas fa-briefcase"></i>
+                        Portfolio</a>
+                </li>
+                <li id="contact">
+                    <a href="#contactSubmenu">
+                            <i class="fas fa-file-contract"></i>
+                            Contact</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <!-- Page Content -->
+        
+               <div class="container-fluid">
+                   <div class="row">
+                   <header id="content"> 
+                        <button type="button" id="sidebarCollapse" class="btn btn-dark sidebarcollapse">
+                                <i class="fas fa-align-left"></i>
+                            </button>
+                       <h1 class="ml3"> 
+                          Welcome to my Portfolio
+                         </h1>
+                         <button href="aboutSubmenu" class="btn btn-dark btn-about " >Know me</button>
+                   </header>
+                   </div>
+            <!-- We'll fill this with dummy content -->
+       <div class="row" id="aboutSubmenu">
+                    <h1>Baha chammakhi</h1>
+            </div>   
+    </div>  
+    </div>
+       <!-- jQuery CDN - Slim version (=without AJAX) -->
+       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+       <!-- Popper.JS -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+       <!--bootstrap js-->
+        <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+       <script src="bootstrap/js/bootstrap.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+       <script>
+    
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+         theme: "minimal"
+    });
+    $('#btn1').on('click', function () {
+                        // open or close navbar
+                        $('#portfolio').addClass('selected');
+                    });
+    
+
+                    $('#sidebarCollapse').on('click', function () {
+                        // open or close navbar  $
+                        $('#sidebarCollapse').toggleClass('sidebarcollapse1');
+                        $('#sidebar').toggleClass('active');
+                        $(this).toggleClass('active');
+                    });
+                });
+               // Wrap every letter in a span
+$('.ml3').each(function(){
+  $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
+});
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 1000,
+    delay: function(el, i) {
+      return 150 * (i+1)
+    }
+  }).add({
+    targets: '.ml3',
+    opacity: 0,
+    duration: 1000,
+    easing: "easeOutExpo",
+    delay: 1000
+  });
+               
+            
+            </script>   
+</body>
+</html>
