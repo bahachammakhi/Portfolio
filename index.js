@@ -95,5 +95,18 @@ function scrollbar() {
       $('#home').addClass('selected');
   }
 }
-
+$(document).ready(function () {
+  
+    var width = $(window).width();
+    $(window).resize(function () {
+        if (width <= '720px') {
+            $('carouselExampleIndicators').addClass('w-50');
+            $('carouselExampleIndicators').removeClass('w-75');
+        }
+        else {
+            $('carouselExampleIndicators').addClass('w-75');
+            $('carouselExampleIndicators').removeClass('w-50'); 
+        }
+    });
+})
            

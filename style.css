@@ -201,7 +201,14 @@ margin-left :60%;
     background: #ca4a50;
     width: 0%;
   }
-  
+  .section3a{
+    background-color: black;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 100vh;
+  }
   @keyframes slideUp {
     0% {
       opacity: 0;
@@ -232,7 +239,9 @@ margin-left :60%;
     /* 80px and its content aligned to centre. Pushing it off the screen with the
        negative left margin
     */
-    
+    .carousel{
+        margin-left: 60px;
+    }
     
     #sidebar.active {
         min-width: 80px;
