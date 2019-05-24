@@ -8,18 +8,26 @@
         $('#about').addClass('selected');
         $('#portfolio').removeClass('selected');
         $('#contact').removeClass('selected');
+        $('p').addClass('slideUp');
+                        $('h5').addClass('slideUp');
+                        $('button').addClass('slideUp');
        
     });
+   
     $('#home').on('click', function () {
         // add the class selected to make it change color
         $('#home').addClass('selected');
         $('#about').removeClass('selected');
         $('#portfolio').removeClass('selected');
         $('#contact').removeClass('selected');
+        $('p').removeClass('slideUp');
+                        $('h5').removeClass('slideUp');
+                        $('button').removeClass('slideUp');
         });
         $('#portfolio').on('click', function () {
           // add effects
           $('.col').addClass('slideUp');
+     
           
           });
           $('#btn3').on('click', function () {
@@ -43,6 +51,7 @@
                         $('h5').addClass('slideUp');
                         $('button').addClass('slideUp');
                         $('#home').removeClass('selected');
+                     
                        
                         var elmnt = document.getElementById("aboutSubmenu");
                          elmnt.scrollIntoView();
@@ -53,6 +62,7 @@
                         $('#about').removeClass('selected');
                         $('#portfolio').removeClass('selected');
                         $('#contact').removeClass('selected');
+                       
                         var elmnt = document.getElementById("homesubmenu");
                         elmnt.scrollIntoView();
                     });
@@ -108,18 +118,30 @@ function scrollbar() {
     $('#about').addClass('selected');
     $('#home').removeClass('selected');
     $('#portfolio').removeClass('selected');
+    $('p').addClass('slideUp');
+                        $('h5').addClass('slideUp');
+                        $('button').addClass('slideUp');
   }else if(scrolled<25){
           $('#about').removeClass('selected');
       $('#home').addClass('selected');
+      $('p').removeClass('slideUp');
+      $('h5').removeClass('slideUp');
+      $('button').removeClass('slideUp');
+      $('.col').removeClass('slideUp');
       
   } if(scrolled>50){
           $('#about').removeClass('selected');
       $('#portfolio').addClass('selected');
       $('#contact').removeClass('selected');
+       $('p').removeClass('slideUp');
+                        $('h5').removeClass('slideUp');
+                        $('button').removeClass('slideUp');
+                        $('.col').addClass('slideUp');
   } if(scrolled>75)
      {
           $('#portfolio').removeClass('selected');
       $('#contact').addClass('selected');
+      $('.col').removeClass('slideUp');
   }
 }
 $(document).ready(function () {
