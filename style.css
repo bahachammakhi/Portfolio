@@ -209,6 +209,10 @@ margin-left :60%;
   min-height: 100vh;
 
   }
+  .img-me{
+      width: 200px;
+      height: 200px;
+  }
   .section4a{
     background-color: rgb(10, 10, 10);
     background-position: center;
@@ -285,6 +289,10 @@ img:hover {
     /* 80px and its content aligned to centre. Pushing it off the screen with the
        negative left margin
     */
+    .img-me{
+        width: 150px;
+        height: 150px;
+    }
     .mb-8{
         margin-left: 200%;
     }
