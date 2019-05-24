@@ -17,6 +17,25 @@
         $('#portfolio').removeClass('selected');
         $('#contact').removeClass('selected');
         });
+        $('#portfolio').on('click', function () {
+          // add effects
+          $('.col').addClass('slideUp');
+          
+          });
+          $('#btn3').on('click', function () {
+            // slide to the tag and some effect
+          
+            $('.col').addClass('slideUp');
+            var elmnt = document.getElementById("portfolioSubmenu");
+             elmnt.scrollIntoView();
+        });
+        $('#btn-4').on('click', function () {
+          // slide to the tag and some effect
+        
+          $('.col').addClass('slideUp');
+          var elmnt = document.getElementById("contactSubmenu");
+           elmnt.scrollIntoView();
+      });
     $('#btn1').on('click', function () {
                         // add the class selected to make it change color
                         $('#about').addClass('selected');
@@ -85,16 +104,50 @@ function scrollbar() {
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
-  if (scrolled>50) {
+  if (scrolled>25) {
     $('#about').addClass('selected');
     $('#home').removeClass('selected');
-  }
-  else if
-      (scrolled<50){
+    $('#portfolio').removeClass('selected');
+  }else if(scrolled<25){
           $('#about').removeClass('selected');
       $('#home').addClass('selected');
+      
+  } if(scrolled>50){
+          $('#about').removeClass('selected');
+      $('#portfolio').addClass('selected');
+      $('#contact').removeClass('selected');
+  } if(scrolled>75)
+     {
+          $('#portfolio').removeClass('selected');
+      $('#contact').addClass('selected');
   }
 }
 $(document).ready(function () {
   
-           
+  var width = $(window).width();
+  $(window).resize(function () {
+      if (width <'720px') {
+          $('#section2').addClass('ml-5');
+         
+      }
+      else {
+        $('#section2').removeClass('ml-5');
+      }
+  });
+})
+function fonctionw(l) {
+  var s='job.html'; 
+  s=l; 
+  
+    window.open(s);
+  }
+  $(function () {
+    $('#emailLink').on('click', function (event) {
+        event.preventDefault();
+      alert("Huh");
+      var email = 'test@theearth.com';
+      var subject = 'Circle Around';
+      var emailBody = 'Some blah';
+      window.location = 'mailto:' + email + '?subject=' + subject + '&body=' +   emailBody;
+    });
+  });          

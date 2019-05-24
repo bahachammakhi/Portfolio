@@ -1,9 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-@import url('https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 
 
 body {
-    font-family: 'Baloo Bhai', cursive;
+    font-family: 'Merriweather Sans', sans-serif;
     
 }
 
@@ -142,8 +142,7 @@ header{
     text-align: center;
     margin-top: 200px;
     margin-left: 500px;
-    -webkit-text-stroke-width: 0.5px;
-   -webkit-text-stroke-color: rgb(0, 0, 0);
+    
     
   }
   .btn-dark:hover{
@@ -160,7 +159,7 @@ margin-left :60%;
     position: fixed;
   }
   .section2a{
-      background-color: black;
+      background-color: rgb(0, 0, 0);
       background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -202,13 +201,60 @@ margin-left :60%;
     width: 0%;
   }
   .section3a{
-    background-color: black;
+    background-color: rgb(7, 7, 7);
+    background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 100vh;
+
+  }
+  .section4a{
+    background-color: rgb(10, 10, 10);
     background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
   min-height: 100vh;
   }
+
+img {
+    margin: 10px 10px 10px 10px;
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    transform: scale(1, 1);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    }
+
+img:hover {
+	cursor: pointer;
+	-webkit-transform: scale(1.5, 1.5);
+    -ms-transform: scale(1.5,1.5);
+    transform: scale(1.5, 1.5);
+    transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s; /* Safari */
+    box-shadow: 10px 10px 5px #888888;
+    z-index: 1;
+    }
+    .icon:hover {
+        cursor: pointer;
+        -webkit-transform: scale(1.5, 1.5);
+        -ms-transform: scale(1.5,1.5);
+        transform: scale(1.5, 1.5);
+        transition-duration: 0.3s;
+        -webkit-transition-duration: 0.3s; /* Safari */
+       
+        z-index: 1;
+        }
+
+.mt-8{
+    margin-top: 20%;
+}
+.ml-8{
+    margin-left: 120%;
+    margin-top: 70%;
+}
   @keyframes slideUp {
     0% {
       opacity: 0;
@@ -239,6 +285,9 @@ margin-left :60%;
     /* 80px and its content aligned to centre. Pushing it off the screen with the
        negative left margin
     */
+    .mb-8{
+        margin-left: 200%;
+    }
     .carousel{
         margin-left: 60px;
     }

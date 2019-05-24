@@ -11,6 +11,8 @@
     
     <!-- Scrollbar Custom CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+
     <title>Baha chammakhi</title>
 </head>
 <body>
@@ -63,10 +65,10 @@
                             <div class="progress-container">
                                     <div class="progress-bar" id="myBar"></div>
                                   </div> 
-                       <h1 class="ml3"> 
-                          Welcome to my Portfolio
+                       <h1 class="ml3 text-uppercase text-white font-weight-bold font-italic"> 
+                          welcome to my portfolio
                          </h1>
-                         <button href="aboutSubmenu" class="btn btn-outline-danger btn-about " id="btn1" >Know me</button>
+                         <button href="aboutSubmenu" class="btn btn-outline-danger btn-about btn-lg  " id="btn1" >Know me</button>
                          <button id="btn2" class="btn btn-dark btn-back"><i class="fas fa-arrows-alt-v"></i></button>
                    </header>
                    </div>
@@ -77,148 +79,85 @@
                 <div class="media">
                         <img class="align-self-start mr-3" width="200px" style=" border-radius: 50%;" height="200px" src="img/me.jpg" alt="Generic placeholder image">
                         <div class="media-body" style="margin-right: 200px;">
-                          <h5 class="mt-0" style="color: aliceblue">Baha eddine chammakhi</h5>
-                          <p>Hello I am an IT network and telecommunication student and a junior front-end-developer .</p>
+                          <h5 class="mt-0 font-weight-bold" style="color: aliceblue">Baha eddine chammakhi</h5>
+                          <p class="font-italic">Hello I am an IT network and telecommunication student and a junior front-end-developer .</p>
                           <p>I love coding and working on projects I found it quite something I really wanna do and enjoy doing </p>
                           <div><a href="http://www.istic.rnu.tn/" target="_blank" style="font-weight: bold"> you can click here to check my college</a></div>
-                          <button class="btn btn-outline-danger" style="margin-top: 10%;margin-bottom: 10%">Check my Portfolio</button>
+                          <button class="btn btn-outline-danger" id="btn3" style="margin-top: 10%;margin-bottom: 10%">Check my Portfolio</button>
                         </div>
                         
                       </div>
             </div>  
             </div> 
     <!--Portfolio-->
-    <div class=" row section3a" id="portfolioSubmenu" >
-            <div class="section2">
-                    <div id="carouselExampleIndicators" class="carousel slide w-75 mt-5" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner">
-                              <div class="carousel-item active">
-                                <img class="d-block w-100" src="img/choose your job.PNG" alt="First slide">
-                                <div class="carousel-caption d-none d-md-block">
-                                        <h5 >ChooseYourJob</h5>
-                                       <button class="btn btn-outline-danger" id="chooseyourjob">Check it</button>
-                                      </div>
-                              </div>
-                              
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                              <span class="sr-only">Next</span>
-                            </a>
-                          </div>
+    <div class=" row section3a " id="portfolioSubmenu" >
+            <div class="section2 mt-8">
+                <div class="container ">
+                    <div class="row ">
+                        <div  class="col">
+                      <img src="img/choose your job.PNG" alt="Choose Your Job" class="img-thumbnail   img-rounded">
+                    </div>
+                    <div  class="col">       <button class="btn btn-outline-danger mt-8 ">Check it</button> <button class="btn btn-outline-danger ml-2 mt-4 " id="btn-4"> <i class="fas fa-inbox mr-3"></i>Contact me </button></div> 
+                    
+                      
+                  </div>
              </div>  
              </div> 
              <!--contact form-->
-             <div class=" row section3a" id="portfolioSubmenu" >
-                    <div class="section2">
-                            <!--Section: Contact v.2-->
-<section class="mb-4">
-
-        <!--Section heading-->
-        <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
-        <!--Section description-->
-        <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-            a matter of hours to help you.</p>
-    
-        <div class="row">
-    
-            <!--Grid column-->
-            <div class="col-md-9 mb-md-0 mb-5">
-                <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="name" name="name" class="form-control">
-                                <label for="name" class="">Your name</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                        <!--Grid column-->
-                        <div class="col-md-6">
-                            <div class="md-form mb-0">
-                                <input type="text" id="email" name="email" class="form-control">
-                                <label for="email" class="">Your email</label>
-                            </div>
-                        </div>
-                        <!--Grid column-->
-    
-                    </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="md-form mb-0">
-                                <input type="text" id="subject" name="subject" class="form-control">
-                                <label for="subject" class="">Subject</label>
-                            </div>
-                        </div>
-                    </div>
-                    <!--Grid row-->
-    
-                    <!--Grid row-->
-                    <div class="row">
-    
-                        <!--Grid column-->
-                        <div class="col-md-12">
-    
-                            <div class="md-form">
-                                <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                <label for="message">Your message</label>
-                            </div>
-    
-                        </div>
-                    </div>
-                    <!--Grid row-->
-    
-                </form>
-    
-                <div class="text-center text-md-left">
-                    <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
-                </div>
-                <div class="status"></div>
-            </div>
-            <!--Grid column-->
-    
-            <!--Grid column-->
-            <div class="col-md-3 text-center">
-                <ul class="list-unstyled mb-0">
-                    <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                        <p>San Francisco, CA 94126, USA</p>
-                    </li>
-    
-                    <li><i class="fas fa-phone mt-4 fa-2x"></i>
-                        <p>+ 01 234 567 89</p>
-                    </li>
-    
-                    <li><i class="fas fa-envelope mt-4 fa-2x"></i>
-                        <p>contact@mdbootstrap.com</p>
-                    </li>
-                </ul>
-            </div>
-            <!--Grid column-->
-    
-        </div>
-    
-    </section>
-    <!--Section: Contact v.2-->
+             <div class=" row section4a" id="contactSubmenu" >
+                    <div class="section2 mt-8 row mb-8" id="section2">
+                            <ul class="list-unstyled col">
+                                    <li class="media">
+                                            <i onclick="fonctionw('https://www.facebook.com/Bahachammakhi2')" class="fab fa-facebook mr-3 fa-5x icon" style="color:rgb(209, 50, 50)"></i>
+                                      <div class="media-body">
+                                        <h5 class="mt-4 text-light font-weight-bold ">Facebook</h5>
+                                        
+                                      </div>
+                                    </li>
+                                    <li class="media my-4">
+                                            <i  onclick="fonctionw('https://www.instagram.com/bahachammakhi/?hl=ur')" class="fab fa-instagram  mr-3 fa-5x icon" style="color:rgb(209, 50, 50)"></i>
+                                      <div class="media-body">
+                                        <h5 class="mt-4 text-light font-weight-bold">Instagram</h5>
+                                       
+                                      </div>
+                                    </li>
+                                    <li class="media">
+                                            <i onclick="fonctionw('https://tn.linkedin.com/in/baha-chammakhi-167b34171')"  class="fab fa-linkedin mr-3 fa-5x icon" style="color:rgb(209, 50, 50)"></i>
+                                      <div class="media-body">
+                                        <h5 class="mt-4 text-light font-weight-bold">Linkdin</h5>
+                                       
+                                      </div>
+                                    </li>
+                                    <ul class="list-unstyled  d-lg-none" id="list-mobile">
+                                            <li class="media ">
+                                            <i onclick="window.location.href = 'mailto:bahachammakhi25@gmail.com';"  class="fas fa-envelope mr-3 fa-5x icon "  style="color:rgb(209, 50, 50)"></i>
+                                            <div class="media-body">
+                                                    <h5 class=" mt-4 text-light  font-weight-bold">Mail me</h5>
+                                                    
+                                                  </div>
+                                            </li>
+                                      </ul>
+                                  </ul>
+                                  <ul class="list-unstyled d-none d-lg-block " id="list-pc">
+                                        <li onclick="window.location.href = 'mailto:bahachammakhi25@gmail.com';"  class="media ml-8">
+                                        <i class="fas fa-envelope mr-3 fa-5x icon "  style="color:rgb(209, 50, 50)"></i>
+                                        <div class="media-body">
+                                                <h5 class=" mt-4 text-light font-weight-bold">Mail me</h5>
+                                                
+                                              </div>
+                                        </li>
+                                  </ul>
+                             
                      </div>  
+                     
                      </div> 
+                     
     </div>
+    <footer class="bg-ligth py-5">
+            <div class="container">
+              <div class="small text-center text-muted">Copyright 2019 - Baha Chammakhi</div>
+            </div>
+          </footer>
        <!-- jQuery CDN - Slim version (=without AJAX) -->
        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
        <!-- Popper.JS -->
@@ -229,6 +168,7 @@
 
        <script src="bootstrap/js/bootstrap.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      
        <script src="index.js"></script>
      </body>
 </html>
