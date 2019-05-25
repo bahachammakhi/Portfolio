@@ -390,8 +390,8 @@ img:hover {
     #sidebar .sidebar-header strong {
         display: block;
     }
-    #sidebar.active .sidebar-header h3 {
-        display: block;
+    #sidebar .sidebar-header h3 {
+        display: none;
     }
     #sidebar.active .sidebar-header strong {
         display: none;
